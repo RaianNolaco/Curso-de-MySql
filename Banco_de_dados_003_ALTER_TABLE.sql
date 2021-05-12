@@ -1,5 +1,7 @@
 use cadastro;
 
+DROP TABLE cursos;
+
 CREATE TABLE cusos(
   nome       varchar(30) not null unique, 
   discricao  text,
@@ -19,3 +21,7 @@ desc cursos;
 #add  chave primaria
 ALTER TABLE cursos
 ADD PRIMARY KEY(id_curso);
+
+SELECT * FROM galerinha;
+desc cursos;
+
