@@ -37,7 +37,7 @@ order by count(*);
   e depois esta agrupando por ano e selecionando apenas aqueles feitos depois de 2013
 */
 select ano,count(*) from cursos
-where tataulas > 30
+where totaulas > 30
 group by ano 
 having ano > 2013
 order by count(*) desc;

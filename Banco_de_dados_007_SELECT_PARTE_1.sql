@@ -92,6 +92,6 @@ select nome,carga,totaulas from cursos
 Where carga > 35 and totaulas < 30;
 
 select nome,carga,total from cursos
-where carga > 35 or tataulas < 30;
+where carga > 35 or totaulas < 30;
 
 #Comando Select é um comando do tipo DQL(date query language) 
