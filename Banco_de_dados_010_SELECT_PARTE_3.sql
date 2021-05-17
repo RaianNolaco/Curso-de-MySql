@@ -19,8 +19,9 @@ group by totaulas;
 select * from cursos
 where totaulas = 30;
 
-#pega da tebala curso aquantidade dos cursos que tem total da aulas igual a 3 e separa por carga horario
-select carga ,count(carga) from cursos where totaulas = 30
+#pega da tebala curso aquantidade dos cursos que tem total da aulas igual a 30  e separa por carga horario
+select carga ,count(carga) from cursos 
+where totaulas = 30
 group by carga;
 
 select * from cursos
@@ -34,7 +35,7 @@ order by count(*);
 
 
 /*Esse select mostra os anos que tiverem cursos com total de aulas maior que 30
-  e depois esta agrupando por ano e selecionando apenas aqueles feitos depois de 2013
+  e depois está agrupando por ano e selecionando apenas aqueles feitos depois de 2013
 */
 select ano,count(*) from cursos
 where totaulas > 30
@@ -44,8 +45,8 @@ order by count(*) desc;
 
 select avg(carga) from cursos;
 
-/*seleciona carga eo ano dos cursos feitos depois de 2015 agrupa pela cararga horaria
-e mostro apenas aqueles feitos depois de 2016 que tem a carga maior que a medeia de horas 
+/*seleciona carga e o ano dos cursos feitos depois de 2015 agrupa pela cararga horaria
+e mostro apenas aqueles feitos depois de 2016 que tem a carga maior que a media de horas 
 de um cursos normal
 */
 select carga,ano,count(*) from cursos
