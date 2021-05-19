@@ -21,3 +21,9 @@ insert into TabelaB values
 ('Carlos'),('Manoel'),
 ('Luiz'),('Fernando');
 
+/*Inner join = retorna os registros em comum entre as duas tabelas.
+  No exemplo abaixo quero ver os nomes semelhantes nas duas tabelas*/
+Select a.nome,b.nome
+FROM TabelaA as A
+inner join TabelaB as b
+on a.nome = b.nome;
