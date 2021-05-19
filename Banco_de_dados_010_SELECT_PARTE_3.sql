@@ -48,7 +48,7 @@ select avg(carga) from cursos;
 /*seleciona carga e o ano dos cursos feitos depois de 2015 agrupa pela cararga horaria
 e mostro apenas aqueles feitos depois de 2016 que tem a carga maior que a media de horas 
 de um cursos normal
-*/
+*/	
 select carga,ano,count(*) from cursos
 where ano > 2015
 group by carga
