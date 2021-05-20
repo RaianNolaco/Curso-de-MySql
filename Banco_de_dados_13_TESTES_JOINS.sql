@@ -1,5 +1,6 @@
 /*Ambiete de testes DevMedia*/
--- drop database teste2;
+
+drop database teste_join;
 
 create database teste_join;
 
@@ -59,3 +60,4 @@ select *from TabelaA as a
 right join TabelaB as b
 on b.nome = a.nome
 where a.nome is null;
+
