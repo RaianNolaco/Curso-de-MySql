@@ -42,3 +42,5 @@ join gafanhoto_assiste_curso as a
 on g.id = a.idgafanhoto
 join cursos as c
 on a.idcurso = c.idcurso;
+
+-- Aula final do curso --
