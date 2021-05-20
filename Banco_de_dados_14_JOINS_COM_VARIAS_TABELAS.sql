@@ -16,3 +16,13 @@ create table gafanhoto_assiste_curso(
   foreign key (idcurso) references cursos (idcurso)
 
 )default charset = utf8;
+
+insert into gafanhoto_assiste_curso value
+(default,'2014-03-01','1','2');
+
+select * from gafanhoto_assiste_curso;
+
+insert into gafanhoto_assiste_curso value 
+(default,'2015-12-22','3','6'),
+(default,'2014-01-01','22','12'),
+(default,'2016-05-12','1','19');
